@@ -1,4 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charesrt="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IoT</title>
+
+<link rel="stylesheet"href="mystyle.css">
+
+<style>
+    .parent ul{
+      display: none;
+    }
+    .active {
+      background-color: rgb(172, 228, 244);
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+    <h1><font color=#000000>IoT</font></h1>
+</header>
+    
+ここではARでメタバースを疑似してみよう！ARを大きく表示して道路の真ん中に立ってみよう！
+    
+    <html>
     <head>
         <title>Title</title>
         <meta charset="utf-8" />
@@ -18,3 +50,34 @@
         ></model-viewer>
     </body>
 </html>
+
+<ul>
+    <li class="parent" onclick="func1(this)">遊び方
+      <ul>
+        <li>ちょうど真上にある丸いボタンを押すとゲームがはじまります．出てきたARが大きすぎたら二本の指大きさを調整してください．</li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">回答と解説
+      <ul>
+        <li>解説｛「メタバース」はインターネット上に構築された「3次元の仮想空間」のことです．もっとわかりやすく言うと「自由に動くことが出来るゲームの世界」などがそれにあてはまります．</li>
+      </ul>
+    </li>
+  </ul>
+    
+    
+<main>
+    <h2>
+        <a href="https://aramakimakihi.github.io/test4/" target="_blank">実験後アンケート</a>
+    </h2>
+</main>
+    
+  <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+
+<footer>
+        近畿大学工学部情報学科教育情報システム研究室
+</footer>
+</body>
